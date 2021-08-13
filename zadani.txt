@@ -1,9 +1,0 @@
-Akční hra
-=========================================
-Jedná se o klon hry Arkanoid/Breakout. Hráč na počátku hry vyšle míček z platformy a touto platformou dále hýbe tak, aby míček odrážel a udržel míček ve vzduchu.
-
-Uživatel zadá mapu, kterou chce spustit a jeho jméno. Po úspěšném načtení mapy se hra spustí s danou mapou. Uživatel odstartuje hru sám napozicováním platformy a stisknutím klávesy pro vyslání míčku. Míček nesmí spadnout pod platformu, jinak hráč ztratí život. Krom o platformu se míček bude odrážet o vrchní a boční strany okna, ale i o bloky samotné. Bloky můžou mít různý počet životů (podle barvy), některé dokonce nebude možné zníčit. Zničení bloků má procentuální šanci na vytvoření bonusu, například zrychlení míčku* či zvětšení platformy. Hra počítá skóre na základě počtu zničených bloků během jednoho odrazu o platformu a rychlost míčku. Toto skóre se na konci hry zapíše do souboru, kde budou vásledky k jednotlivým mapám.
-
-*Hra se sice ztíží, ale zvětší se i skóre za každý další zničený blok.
-
-Polymorfismus bude nejvíce použit při vykreslování stavu hry, toho bude docíleno implementací společného rozhraní IDrawable. Menší polymorfismus bude také využit při kolizy míčku s platformou či cihlou (případně i pro jiné objekty, které budou vyžadovat stejné chování odrazu). Dalším potencionálním polymorfismem může být systém vyjímek.
